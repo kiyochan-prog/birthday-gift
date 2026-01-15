@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SCREEN 1 -->
+  <div id="screen1" class="screen active">
+    <h1 class="shake">⚠️ STOP ⚠️</h1>
+    <p>You are entering the Birthday Quest.</p>
+    <button onclick="goToScreen(2)">I’m Ready 😎</button>
+  </div>
+
+  <!-- SCREEN 2 -->
+  <div id="screen2" class="screen">
+    <h1>How cool are you? 😏</h1>
+    <p>re you actually cool or just pretending?
+     Be honest… or suffer the consequences.</p>
+    
+
+    <button onmouseover="runAway(this)">Not much 🤡</button>
+    <button onclick="wrong()">Average 😐</button>
+    <button onmouseover="runAway(this)">Trying hard 😬</button>
+    <button onclick="wrong()">Cool-ish 😎</button>
+    <button onclick="goToScreen(3)">am GAY🔥</button>
+  </div>
+
+
+  <!-- SCREEN 4 : GIFT -->
+  <div id="screen4" class="screen">
+      <div class="gift-box">
+    <h1 class="glow">╰(*°▽°*)╯my presence is the best gift that you can have</h1>
+    <h1 class="glow">╰(*°▽°*)╯BE GRATEFUL ╰(*°▽°*)╯</h1>
+    <p>KHUS RAHOOO </p>
+
+     <img src="C:\JND\index.html\U can use it.jpg" class="gift-img">
+ <button onclick="goToScreen(1)">Play Again 🔁</button>
+      
+      
+    </div>
+  </div>
+
+
+  <!-- SCREEN 3 -->
+  <div id="screen3" class="screen">
+    <h1 class="glow">🎉 HAPPY BIRTHDAY 🎉</h1>
+    <p>You passed the quest. Barely 😌</p>
+
+    <img src="C:\Users\Kukku\Downloads\download (2).png" " class="float">
+   <button onclick="goToScreen(4)">Open Your Gift 🎁</button>
+
+
+    <audio id="song" src="music.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

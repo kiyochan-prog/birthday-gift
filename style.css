@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen.active {
+  display: flex;
+}
+
+button {
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shake {
+  animation: shake 0.8s infinite;
+}
+
+.glow {
+  text-shadow: 0 0 20px yellow;
+}
+
+.float {
+  width: 200px;
+  animation: float 2s infinite ease-in-out;
+}
+
+.gift-img {
+  width: 250px;        /* yaha size control hota hai */
+  max-width: 80%;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+/* Screen basic */
+.screen {
+  min-height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* Gift card */
+.gift-box {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 90%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 👈 THIS CENTERS THE BUTTON */
+
+}
+
+/* Image */
+.gift-img {
+  width: 230px;
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px #00000080;
+}
+
+/* Text visibility */
+.gift-box h1,
+.gift-box p {
+  margin: 10px 0;
+  color: white;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
